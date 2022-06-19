@@ -1,0 +1,118 @@
+* {
+  font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+}
+
+
+.video {
+  position: relative;
+  display:grid;
+}
+
+#timeline {
+  width: 320px;
+  background: black;
+  height: 15px;
+  z-index: 1;
+
+}
+
+#filled-timeline {
+  width: 0px;
+  background: red;
+  height: 15px;
+  transition: .2s width;
+}
+
+#timeline-thumbnail canvas {
+  border: 2px solid white;
+  border-radius: 3px;
+  position: absolute;
+}
+
+/*css*/
+.m-text {
+  font-size: 1.2rem;
+  margin: 20px 0px;
+}
+
+.lg-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mr-15 {
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.fw-600 {
+  font-weight: 600
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.flexin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexin-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.panel {
+  margin-top: 80px;
+}
+
+.mouse-event-container {
+  display: grid;
+  grid-template-cols: 2;
+}
+
+.symboleq {
+  font-size: 2.4rem;
+}
+
+#mouse-event-container {
+  opacity: 0;
+  transition: 1s ease-in
+}
+
+.play-btn {
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  border-radius: 2rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.play-btn::hover {
+  opacity: 0.9
+}

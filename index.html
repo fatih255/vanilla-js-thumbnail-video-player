@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fi Video Player</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="flexin container">
+        <div class="video">
+            <video id="video" preload="auto" playsInline muted src="http://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"></video>
+            <div id="playbtn" class="play-btn">
+                Play
+            </div>
+            <div id="timeline-thumbnail"></div>
+        </div>
+  
+        <div id="timeline">
+            <div id="filled-timeline"></div> 
+        </div>
+        <div class="panel">
+            <div class="flexin">
+                <span class="m-text">Counter</span>
+                <div>
+                    <span id="counter" class="lg-text"></span>
+                    <span id="sectopx" class="lg-text"></span>
+                </div>
+            </div>
+            <div id="mouse-event-container" class="flexin">
+                <span class="m-text mt-40 fw-600 coloredmv">Mouse Move Event</span>
+                <span id="needmoveforChange" class="m-text mt-10 coloredmv">Need Move For </span>
+                <div>
+                    <div class="flexin-around">
+                        <div class="flexin">
+                            <span id="" class="m-text">Pixel value in seconds</span>
+                            <span id="mouse-move-seconds" class="lg-text"></span>
+                        </div>
+                        <div class="flexin">
+                            <span class="symboleq mr-15">=</span>
+                        </div>
+                        <div class="flexin">
+                            <span id="" class="m-text mx-45">Move PX </span>
+                            <span id="mouse-move-pixel" class="lg-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
